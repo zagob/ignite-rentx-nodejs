@@ -41,7 +41,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd ~/www/api-rent
+            cd ~/www/api-rentx
             yarn
             ./node_modules/.bin/typeorm migration:run
             pm2 restart rentx_api
